@@ -77,8 +77,20 @@ nav ul li.active {
 #tasks .taskTitle {
   display: inline-block;
 }
-#tasks .completed .taskTitle{
+#tasks .editBox {
+  display: none;
+}
+#tasks .completed .taskTitle {
   text-decoration: line-through;
+}
+#tasks .editMode .editBox {
+  display: inline-block;
+}
+#tasks .editMode input[type="checkbox"] {
+  display: none;
+}
+#tasks .editMode .taskTitle {
+  display: none;
 }
 .sectionTitle {
   font-size: 2em;
