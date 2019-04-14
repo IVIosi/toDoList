@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple to-do Application</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <noscript>Please turn on your JavaScript...</noscript>
+</head>
+
+<body>
+    <header>
+        <h1>To-Do List</h1>
+        <h3>A simple JavaScript to-do list app</h3>
+    </header>
+    <nav>
+        <ul>
+            <li class="active">Main Page</li>
+            <li class="">Settings</li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="sectionTitle">Tasks:</div>
+            <ul id="tasks">
+            </ul>
+        </section>
+        <section>
+            <div class="sectionTitle">Add new task:</div>
+            <input id="newTaskTitle" value="">
+            <button onclick="addTask()"><span>+ add new</span></button>
+        </section>
+    </main>
+    <footer>
+        <span>under<a href="https://opensource.org/licenses/MIT"> MIT license</a></span>
+    </footer>
+</body>
+<script src="./js/main.js"></script>
+
+</html>

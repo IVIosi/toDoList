@@ -1,0 +1,87 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 100%;
+  margin: 0;
+}
+header {
+  text-align: center;
+}
+section {
+  text-align: center;
+}
+footer {
+  background: #1abc9c;
+  padding: 20px;
+  text-align: center;
+}
+footer span {
+  display: block;
+  padding: 20px 5px 5px 5px;
+}
+footer a {
+  color: #000;
+}
+footer a:hover {
+  color: #fcfcfc;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+  padding: 10px 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  outline: none;
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+nav {
+  text-align: center;
+  position: sticky;
+  background: #333;
+  overflow: hidden;
+}
+nav ul li {
+  display: inline-block;
+  padding: 15px 20px;
+  color: #fcfcfc;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background: #ddd;
+  color: #000;
+}
+nav ul li.active {
+  cursor: default;
+  background: #4caf50;
+  color: #fff;
+}
+
+#tasks .taskTitle {
+  display: inline-block;
+}
+#tasks .completed .taskTitle{
+  text-decoration: line-through;
+}
+.sectionTitle {
+  font-size: 2em;
+  padding: 0.4em;
+  margin-bottom: 0.2em;
+}
