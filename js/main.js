@@ -14,7 +14,7 @@ class Task {
     //main completed checkbox
     var checkBox = document.createElement("input");
     checkBox.setAttribute("type", "checkbox");
-    checkBox.addEventListener("click", this.markAsCompleted.bind(this));
+    checkBox.addEventListener("click", () => this.markAsCompleted());
     //edit box input
     var editBox = document.createElement("input");
     editBox.setAttribute("type", "text");
@@ -26,12 +26,12 @@ class Task {
     listItemText.textContent = this.taskTitle;
     //edit button
     var editButton = document.createElement("button");
-    editButton.addEventListener("click", this.editTask.bind(this));
+    editButton.addEventListener("click", () => this.editTask());
     var editButtonSpan = document.createElement("span");
     editButtonSpan.textContent = "Edit";
     //remove button
     var removeButton = document.createElement("button");
-    removeButton.addEventListener("click", this.removeTask.bind(this));
+    removeButton.addEventListener("click", () => this.removeTask());
     var removeButtonSpan = document.createElement("span");
     removeButtonSpan.textContent = "Remove";
     //appending all inner elements
